@@ -22,19 +22,19 @@ public class Main {
         System.out.println("Array: " + Arrays.toString(array));
 
         reverseArr(array, 2, array.length - 1);
-        System.out.println("Reversed array: " + Arrays.toString(array));
+        System.out.println("Reversed array starting at index 2: " + Arrays.toString(array));
 
     }
 
     public static void reverseArr(int[] arr, int startIndex, int endIndex){
-        //Time complexity of this algorithm is technically O(N/2), but since multiplication/division of constants doesn't matter,
-        //it is O(N). In this case, the starting index is 2, and the endIndex is 79, making the array {3, 40, 5, 7, 8, 79}.
-        //Before swap: {3, 40, 5, 7, 8, 79}
-        //Swap one: {79, 40, 5, 7, 8, 3}
-        //Swap two: {79, 8, 5, 7, 40, 3}
-        //Swap three: {79, 8, 7, 5, 40, 3}.
-        //This means the algo only needs to swap three times, but the number of swaps depends entirely on how big the input (n) is.
-        //It grows linearly.
+//        Time complexity of this algorithm is technically O(N/2), but since multiplication/division of constants doesn't matter,
+//        it is O(N). In this case, the starting index is 2, and the endIndex is 79, making the array {3, 40, 5, 7, 8, 79}.
+//        Before swap: {3, 40, 5, 7, 8, 79}
+//        Swap one: {79, 40, 5, 7, 8, 3}
+//        Swap two: {79, 8, 5, 7, 40, 3}
+//        Swap three: {79, 8, 7, 5, 40, 3}.
+//        This means the algo only needs to swap three times, but the number of swaps depends entirely on how big the input (n) is.
+//        It grows linearly.
         if(startIndex < endIndex){ //the base condition is one startIndex = endIndex.
             //swap values
             int temp = arr[startIndex]; //set temp int to the value at arr[startIndex]

@@ -31,11 +31,11 @@ public class LinkedList<T> {
     }
 
     public int howManyNodesRecursive(Node node){
-        //This algorithm has big O of this algorithm is O(N), Linear time complexity. This is due
-        //to the fact that the algorithm has to go through each and every node to find
-        //how many elements are in the node. This time complexity is almost always going to be
-        //proportional to input size. The bigger the size of the list, the longer it will take for this
-        //algo to execute, linearly.
+//        This algorithm has big O of this algorithm is O(N), Linear time complexity. This is due
+//        to the fact that the algorithm has to go through each and every node to find
+//        how many elements are in the node. This time complexity is almost always going to be
+//        proportional to input size. The bigger the size of the list, the longer it will take for this
+//        algo to execute, linearly.
 
 
         //base case in recursive method
