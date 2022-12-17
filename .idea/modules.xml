@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BigOhAnalysis.iml" filepath="$PROJECT_DIR$/BigOhAnalysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedListAndNode.iml" filepath="$PROJECT_DIR$/LinkedListAndNode.iml" />
     </modules>
   </component>
 </project>

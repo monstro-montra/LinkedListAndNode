@@ -22,7 +22,7 @@ public class LinkedList<T> {
 
     public void show(){
         Node node = head;
-        while(node.getNext() != null){
+        while(node.getNext() != null){ //while next node is not null
             System.out.println(node.getData()); //print data in node for each iteration.
             node = node.getNext(); //go to next node. continuously
         }
@@ -31,8 +31,15 @@ public class LinkedList<T> {
     }
 
     public int howManyNodesRecursive(Node node){
+        //This algorithm has big O of this algorithm is O(N), Linear time complexity. This is due
+        //to the fact that the algorithm has to go through each and every node to find
+        //how many elements are in the node. This time complexity is almost always going to be
+        //proportional to input size. The bigger the size of the list, the longer it will take for this
+        //algo to execute, linearly.
+
+
         //base case in recursive method
-        if(node == null){
+        if(node == null){ //if node is null, aka last element in list
             return 0;
         }
         //add one for every method call. each time it finds that node != null, add one.
